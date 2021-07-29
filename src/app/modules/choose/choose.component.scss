@@ -1,0 +1,56 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.background{
+    background-image: url("../../../assets/image/zoom-backgrounds\,-water-colours-design-template-b4783574ae9d7fa5281b37a1388b36f4_screen.jpeg");
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.box{
+    width: 500px;
+    height: 100px; 
+    border-radius: 4px;
+    border: solid 1px #000000;
+    margin: auto;
+}
+.box2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+    //   border: solid 1px #000000;
+      opacity: 0.2;
+      background: #ffffff;
+      
+    }
+    
+    &:hover:after {
+        opacity: 0.8;
+    }
+  }

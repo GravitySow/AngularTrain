@@ -1,0 +1,36 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.background{
+    background-image: url("../../../assets/image/zoom-backgrounds\,-water-colours-design-template-b4783574ae9d7fa5281b37a1388b36f4_screen.jpeg");
+    height: 100%;
+    width: 100%;
+    padding-top: 15%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+    //background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .example-full-width{
+      width: 100%;
+  }
+
+  .button{
+      width: 100%;
+  }
