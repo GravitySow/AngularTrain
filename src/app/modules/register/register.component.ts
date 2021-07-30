@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-
+import { MatTable, MatTableDataSource } from '@angular/material/table';
+import { TableComponent } from '../login/component/table/table.component';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -9,10 +10,13 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class RegisterComponent implements OnInit {
 
   public myForm!: FormGroup;
+  private table: TableComponent = new TableComponent();
   constructor(private fb: FormBuilder) { }
-  data: form [] = [];
+  data: any [] = [];
+  dataSource = new MatTableDataSource<[]>();;
   ngOnInit() {
     this.createForm();
+    
   }
 
   createForm(){
@@ -34,6 +38,8 @@ export class RegisterComponent implements OnInit {
       f.confirmpassword = this.myForm.controls.name.value;
 
       this.data?.push(f);
+
+      this.dataSource = new MatTableDataSource(this.data);
     }
   }
 }

@@ -8,6 +8,12 @@ import { MatTable, MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+  updateTable(data: import("../../../register/register.component").form[]) {
+    throw new Error('Method not implemented.');
+  }
+  update(data: import("../../../register/register.component").form[]) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor() { }
   @Input() data: any;

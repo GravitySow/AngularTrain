@@ -8,17 +8,13 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class TableComponent implements OnInit {
 
-  constructor() {
-    console.log(this.data)
-  }
-  @Input() data: any;
-
-  dataSource = new MatTableDataSource<[]>();
+  constructor() {}
+  @Input() dataSource = new MatTableDataSource<[]>();
+  
+  
   displayedColumns:  String[] = ["name","surname","username","password"];
   
   ngOnInit(): void {
-    console.log(this.data)
-    this.dataSource = new MatTableDataSource(this.data);
   }
 
 }
